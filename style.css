@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/** --------------------- Header ------------------ **/
+
+#reservation {
+    background-color: blue;
+    height: 6.5rem;
+    width: 60%;
+    top: -3rem;
+    position: relative;
+}
