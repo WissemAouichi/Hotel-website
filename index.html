@@ -7,32 +7,60 @@
     <title>Nirvana Hotel</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7565d787a3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav float-right">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Rooms</a>
-                <a class="nav-item nav-link" href="#">Gallery</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Nirvana Hotel</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </nav>
+    <!-- Navbar -->
+
+    <!-- Full Page Intro -->
+    <div class="view"
+        style="background-image: url('img/main.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 25rem;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light align-items-center">
+            <!-- Content -->
+            <div class="container">
+                <!--Grid row-->
+
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+
     <!-- ********************** Navbar Ends ****************************** -->
     <!-- ********************** Header ****************************** -->
-    <header>
-        <img src="img/main.jpg" class="img-fluid" alt="Responsive image">
-    </header>
-    <div class="container-fluid d-flex align-items-center" id="reservation">
-        <form action="post" class=" form-inline w-100">
+
+    <div class="container d-flex align-items-center" id="reservation">
+        <form action="post" class=" form-inline w-100" style="justify-content: none;">
             <div class="col-md-3 px-4">
                 <label for="datein" class="col-form-label">Date In</label>
                 <input type="date" name="datein" id="datein" class="form-control" placeholder="">
@@ -41,7 +69,7 @@
                 <label for="dateout" class="col-form-label">Date Out</label>
                 <input type="date" name="dateout" id="dateout" class="form-control" placeholder="">
             </div>
-            <div class="col-md-2 pl-5">
+            <div class="col-md-2 px-4">
                 <label for="adult" class="col-form-label">Adult</label>
                 <select class="form-control" id="adult">
                     <option>1</option>
@@ -51,7 +79,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="col-md-2 pr-4">
+            <div class="col-md-2 px-4">
                 <label for="child" class="col-form-label">Child</label>
                 <select class="form-control" id="child">
                     <option>1</option>
@@ -61,8 +89,8 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="col-md-2">
-                <a name="" id="" class="btn btn-primary" href="#" role="button">Reservation</a>
+            <div class="col-md-2 py-3 d-flex justify-content-center">
+                <a name="" id="btnreservation" class=" btn btn-primary" href="#" role="button">Reservation</a>
             </div>
         </form>
     </div>
@@ -75,13 +103,15 @@
                     <img src="img/main.jpg" alt="img" style="width: auto; height: 15rem;">
                 </div>
                 <div class="col-md-6 col-sm-12 ">
-                    <h2>Welcome to Nirvana Hotel</h2> <br>
-                    <p>The Nirvana Hotel is the right choice for visitors who are searching for a combination of charm
+                    <h2 class="text-white">Welcome to Nirvana Hotel</h2> <br>
+                    <p class="text-white">The Nirvana Hotel is the right choice for visitors who are searching for a
+                        combination of charm
                         and a
                         convenient
                         position from where to explore surroundings.
 
-                        The rooms are arranged on the first, second and third floors. On the top floor, there is also a
+                        The rooms are arranged on the first, second and third floors. On the top floor, there is
+                        also a
                         charming terrace or
                         solarium available for the use of guests, from where you can enjoy the view.</p>
                     <button class="btn btn-primary">More details</button>
@@ -91,19 +121,111 @@
     </section>
     <!-- *********************** Welcome section Ends**********************-->
     <!-- *********************** Ameneties Section**********************-->
-    <section id="ameneties">
-        <div class="container-fluid border m0" style="height: 20rem;">
-            <div class="row d-flex align-content-center">
-                <div class="col-md-12 pt-5">
-                    <img src="img/main.jpg" alt="" style="height:10rem; width: 100%;">
-                </div>
-                <div class="col-md-3 col-sm-12 p3 border float-md-right"
-                    style="background-color: brown; height: 15rem;">
 
+
+    <div class="view"
+        style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-gradient align-items-center">
+            <!-- Content -->
+            <div class="container">
+                <!--Grid row-->
+                <div class="row mt-5">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-6 col-xl-5 mb-4">
+                        <!--Form-->
+                        <h2 class="pt-4 text-white h2-responsive font-weight-bold">Our Amenities</h2>
+                        <hr class="hr-dark fadeInLeft">
+                        <p class=" text-white">The hotel is arranged on three floors without a lift. On the ground
+                            floor,
+                            apart from the
+                            reception, there is a
+                            comfortable lounge where you can sit and drink tea.</p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <ul style="list-style: none;">
+                                    <li class="text-white"><i class="fas fa-swimming-pool text-white"></i> Swimming
+                                        pool
+                                    </li>
+                                    <li class="text-white"><i class="fas fa-spa"></i> Spa & massage</li>
+                                    <li class="text-white"><i class="fas fa-swimmer"></i> Surfing lessons</li>
+                                    <li class="text-white"><i class="fas fa-water"></i> Diving & snorkling</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <ul style="list-style: none;">
+                                    <li class="text-white"><i class="fas fa-dumbbell"></i> Gym & yoga</li>
+                                    <li class="text-white"><i class="fas fa-ship"></i> Boat tours</li>
+                                    <li class="text-white"><i class="fas fa-microphone-alt"></i> Conference room
+                                    </li>
+                                    <li class="text-white"><i class="fas fa-umbrella-beach"></i> Private Beach</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.Form-->
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+    </div>
+
+    </section>
+
+    <!-- *************************** Footer ****************************-->
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container py-3">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4"><strong>
+                            <h4 class="text-white">Nirvana Hotel</h4>
+                        </strong>
+                        <p class="text-white">We are a 5 stars hotel, All hotels and vacation rental properties
+                            listed
+                            on this website are independently owned and operated.</p>
+                        <!-- Rights-->
+                        <p class="rights text-white"><span>©  </span><span
+                                class="copyright-year">2020</span><span> </span><span>Wissem
+                                Aouichi</span><span>. </span><span>All
+                                Rights Reserved.</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white">Contacts</h5>
+                    <dl class="contact-list text-white">
+                        <dt>Address:</dt>
+                        <dd>798 South Park Avenue, Tunisia, Tunis</dd>
+                    </dl>
+                    <dl class="contact-list text-white">
+                        <dt>email:</dt>
+                        <dd><a href="mailto:#">nirvanahotel@gmail.com</a></dd>
+                    </dl>
+                    <dl class="contact-list text-white">
+                        <dt>phones:</dt>
+                        <dd><a href="tel:#">+216 52 669 340</a> <span>or</span> <a href="tel:#">+216 21 478 360</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="nav-list text-white" style="list-style: none;">
+                        <li><a class="text-white" href="index.html">Home</a></li>
+                        <li><a class="text-white" href="rooms.html">Rooms</a></li>
+                        <li><a class="text-white" href="gallery.html">Gallery</a></li>
+                        <li><a class="text-white" href="contacts.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
     <!-- ********************** Bootstrap JS *************************** -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
