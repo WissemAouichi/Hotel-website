@@ -18,7 +18,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav float-right">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#">Rooms</a>
                 <a class="nav-item nav-link" href="#">Gallery</a>
@@ -31,18 +31,18 @@
     <header>
         <img src="img/main.jpg" class="img-fluid" alt="Responsive image">
     </header>
-    <div class="container d-flex align-items-center" id="reservation">
-        <form action="post" class="form-group form-inline">
-            <div class="form-group">
-                <label for="datein">Date In</label>
+    <div class="container-fluid d-flex align-items-center" id="reservation">
+        <form action="post" class=" form-inline w-100">
+            <div class="col-md-3 px-4">
+                <label for="datein" class="col-form-label">Date In</label>
                 <input type="date" name="datein" id="datein" class="form-control" placeholder="">
             </div>
-            <div class="form-group">
-                <label for="dateout">Date Out</label>
+            <div class="col-md-3 px-4">
+                <label for="dateout" class="col-form-label">Date Out</label>
                 <input type="date" name="dateout" id="dateout" class="form-control" placeholder="">
             </div>
-            <div class="form-group">
-                <label for="adult">Adult</label>
+            <div class="col-md-2 pl-5">
+                <label for="adult" class="col-form-label">Adult</label>
                 <select class="form-control" id="adult">
                     <option>1</option>
                     <option>2</option>
@@ -51,8 +51,8 @@
                     <option>5</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label for="child">Child</label>
+            <div class="col-md-2 pr-4">
+                <label for="child" class="col-form-label">Child</label>
                 <select class="form-control" id="child">
                     <option>1</option>
                     <option>2</option>
@@ -61,7 +61,7 @@
                     <option>5</option>
                 </select>
             </div>
-            <div>
+            <div class="col-md-2">
                 <a name="" id="" class="btn btn-primary" href="#" role="button">Reservation</a>
             </div>
         </form>
@@ -72,10 +72,10 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <img src="img/main.jpg" alt="img" style="width: 15rem; height: 15rem;">
+                    <img src="img/main.jpg" alt="img" style="width: auto; height: 15rem;">
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <h2>Welcome to Nirvana Hotel</h2>
+                <div class="col-md-6 col-sm-12 ">
+                    <h2>Welcome to Nirvana Hotel</h2> <br>
                     <p>The Nirvana Hotel is the right choice for visitors who are searching for a combination of charm
                         and a
                         convenient
@@ -84,7 +84,7 @@
                         The rooms are arranged on the first, second and third floors. On the top floor, there is also a
                         charming terrace or
                         solarium available for the use of guests, from where you can enjoy the view.</p>
-                    <button>More details</button>
+                    <button class="btn btn-primary">More details</button>
                 </div>
             </div>
         </div>
