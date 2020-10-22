@@ -12,9 +12,9 @@
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>Nirvana Hotel</strong></a>
+            <a class="navbar-brand" href="#"><strong>La Casa Hotel</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
                 aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,39 +31,144 @@
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item" active>
-                        <a class="nav-link" href="contacts.html">Contacts</a>
+                        <a class="nav-link" href="contacts.html">Contact</a>
                     </li>
                 </ul>
 
             </div>
         </div>
     </nav>
-    <!-- Navbar -->
+
+    <!-- ********************** Navbar Ends ****************************** -->
     <!-- Full Page Intro -->
     <div class="view"
         style="background-image: url('img/main.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 25rem;">
         <!-- Mask & flexbox options-->
-        <div class="mask rgba-black-light align-items-center">
+        <div class=" rgba-black-light align-items-center">
             <!-- Content -->
             <div class="container">
                 <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center text-white py-4 h2-responsive"
+                            style="font-family: Neue Helvetica,Helvetica,sans-serif; font-weight: 200; font-style: normal; letter-spacing: 5px; line-height: 42px;">
+                            CONTACT US</h2>
+                        <table class="table table-dark">
+                            <tr>
+                                <td class=" text-center text-middle">Adresse</td>
+                                <td class="text-right"> Zone Touristique Cap Gammarth, 1057 <br> La Marsa, Tunis, 1057
+                                    Tunisia</td>
+                            </tr>
+                            <tr>
+                                <td class=" text-center text-middle">Reservations</td>
+                                <td class="text-right"> (+216) 52-669-340</td>
+                            </tr>
+                            <tr>
+                                <td class=" text-center text-middle">Front-Desk</td>
+                                <td class="text-right"> (+216) 21-478-360</td>
+                            </tr>
+                        </table>
 
+                        </p>
+                    </div>
+                </div>
             </div>
             <!-- Content -->
         </div>
         <!-- Mask & flexbox options-->
     </div>
     <!-- Full Page Intro -->
-    <!-- ********************** Navbar Ends ****************************** -->
+    <div class="container d-flex justify-content-center py-5">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12759.068612754218!2d10.299162059419146!3d36.9198312816423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2b433131cde43%3A0xcb2b5a526ea1bd10!2sMarina%20de%20Gamarth!5e0!3m2!1sen!2stn!4v1603378649769!5m2!1sen!2stn"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </div>
+    <form action="post">
+        <div class="container p-5">
+            <div class="table-responsive">
+                <table class="table" id="tablecontact">
+                    <tr>
+                        <td>
+                            <label for="prefix" class="text-white">Prefix</label>
+                            <select name="prefix" id="prefix" aria-placeholder="prefix" class="form-control">Prefix
+                                <option value="Select" disabled>Select</option>
+                                <option value="None">None</option>
+                                <option value="Mr">Mr.</option>
+                                <option value="Mrs">Mrs.</option>
+                                <option value="Ms">Ms.</option>
+                                <option value="Miss">Miss.</option>
+                            </select>
+                        </td>
+                        <td> <label for="prenom" class="text-white">First Name</label>
+                            <input type="text" name="prenom" id="prenom" placeholder="First Name*" class="form-control"
+                                required>
+                        </td>
+                        <td> <label for="Nom" class="text-white">Last Name</label>
+                            <input type="text" name="Nom" id="Nom" placeholder="Last Name*" class="form-control"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="email" class="text-white">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email*" class="form-control"
+                                required>
+                        </td>
+                        <td>
+                            <label for="tel" class="text-white">Phone Number</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Phone Number*" class="form-control"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="reason" class="text-white">Reason to contact</label>
+                            <select name="reason" id="reason">
+                                <option value="1" disabled>Select a Reason</option>
+                                <option value="2">Make or Change a Reservation</option>
+                                <option value="3">General Question</option>
+                                <option value="4">Technical Support</option>
+                                <option value="5">Lost Items</option>
+                                <option value="6">Medical Alert</option>
+                                <option value="7">Comments & Concerns</option>
+                                <option value="8">Other Reasons</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label for="textarea" class="text-white">How can we help you ? </label>
+                            <textarea name="textarea" id="textarea" cols="30" rows="10"
+                                placeholder="Enter your questions here" class="form-control">
+                </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><button type="submit" class="btn mb-2 w-100 bg-dark text-white border-white">Send</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </form>
+
+
     <!-- *************************** Footer ****************************-->
-    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <footer class="section footer-classic context-dark bg-image border-top border-white"
+        style="background: transparent;">
         <div class="container py-3">
             <div class="row row-30">
                 <div class="col-md-4 col-xl-5">
                     <div class="pr-xl-4"><strong>
-                            <h4 class="text-white">Nirvana Hotel</h4>
+                            <h4 class="text-white">La Casa Hotel</h4>
                         </strong>
-                        <p class="text-white">We are a 5 stars hotel, All hotels and vacation rental properties
+                        <p class="text-white" style="font-size: small;">We are a 5 stars hotel, All hotels and vacation
+                            rental properties
                             listed
                             on this website are independently owned and operated.</p>
                         <!-- Rights-->
