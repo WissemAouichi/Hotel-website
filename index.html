@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirvana Hotel</title>
+    <title>La Casa Hotel</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7565d787a3.js" crossorigin="anonymous"></script>
@@ -12,14 +12,16 @@
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark  scrolling-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>Nirvana Hotel</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
-                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><strong>La Casa Hotel</strong></a>
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -28,10 +30,10 @@
                         <a class="nav-link" href="rooms.html">Rooms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
+                        <a class="nav-link" href="contacts.html">Contact</a>
                     </li>
                 </ul>
 
@@ -62,15 +64,15 @@
     <div class="container d-flex align-items-center" id="reservation">
         <form action="post" class=" form-inline w-100" style="justify-content: none;">
             <div class="col-md-3 px-4">
-                <label for="datein" class="col-form-label">Date In</label>
+                <label for="datein" class="col-form-label text-white font-weight-bold">Date In</label>
                 <input type="date" name="datein" id="datein" class="form-control" placeholder="">
             </div>
             <div class="col-md-3 px-4">
-                <label for="dateout" class="col-form-label">Date Out</label>
+                <label for="dateout" class="col-form-label text-white font-weight-bold">Date Out</label>
                 <input type="date" name="dateout" id="dateout" class="form-control" placeholder="">
             </div>
             <div class="col-md-2 px-4">
-                <label for="adult" class="col-form-label">Adult</label>
+                <label for="adult" class="col-form-label text-white">Adult</label>
                 <select class="form-control" id="adult">
                     <option>1</option>
                     <option>2</option>
@@ -80,7 +82,7 @@
                 </select>
             </div>
             <div class="col-md-2 px-4">
-                <label for="child" class="col-form-label">Child</label>
+                <label for="child" class="col-form-label text-white font-weight-bold">Child</label>
                 <select class="form-control" id="child">
                     <option>1</option>
                     <option>2</option>
@@ -90,7 +92,8 @@
                 </select>
             </div>
             <div class="col-md-2 py-3 d-flex justify-content-center">
-                <a name="" id="btnreservation" class=" btn btn-primary" href="#" role="button">Reservation</a>
+                <button name="" id="btnreservation" class=" btn btn-primary border border-white" href="#" role="button">
+                    Reservation </button>
             </div>
         </form>
     </div>
@@ -100,11 +103,14 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <img src="img/main.jpg" alt="img" style="width: auto; height: 15rem;">
+                    <img src="img/welcome1.jpg" alt="img" style="width: 90%; height: 15rem;">
                 </div>
                 <div class="col-md-6 col-sm-12 ">
-                    <h2 class="text-white">Welcome to Nirvana Hotel</h2> <br>
-                    <p class="text-white">The Nirvana Hotel is the right choice for visitors who are searching for a
+                    <h2 class="text-white my-1 py-2">Welcome to La Casa Hotel</h2> <br>
+                    <p class="text-white pl-3 text-justify border-left border-white">La Casa Hotel is the right
+                        choice for visitors who are
+                        searching for
+                        a
                         combination of charm
                         and a
                         convenient
@@ -114,7 +120,7 @@
                         also a
                         charming terrace or
                         solarium available for the use of guests, from where you can enjoy the view.</p>
-                    <button class="btn btn-primary">More details</button>
+                    <button class=" btn btn-primary pl-3 bg-dark border-white">More details</button>
                 </div>
             </div>
         </div>
@@ -137,17 +143,19 @@
                     </div>
                     <!--Grid column-->
                     <!--Grid column-->
-                    <div class="col-md-6 col-xl-5 mb-4">
+                    <div class="col-md-6 col-xl-5 my-4" id="ameneties">
                         <!--Form-->
                         <h2 class="pt-4 text-white h2-responsive font-weight-bold">Our Amenities</h2>
                         <hr class="hr-dark fadeInLeft">
-                        <p class=" text-white">The hotel is arranged on three floors without a lift. On the ground
+                        <p class=" text-white text-justify">The hotel is arranged on three floors without a
+                            lift. On the
+                            ground
                             floor,
                             apart from the
                             reception, there is a
                             comfortable lounge where you can sit and drink tea.</p>
                         <div class="row">
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6 col-6">
                                 <ul style="list-style: none;">
                                     <li class="text-white"><i class="fas fa-swimming-pool text-white"></i> Swimming
                                         pool
@@ -157,7 +165,7 @@
                                     <li class="text-white"><i class="fas fa-water"></i> Diving & snorkling</li>
                                 </ul>
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-6 col-sm-6 col-6">
                                 <ul style="list-style: none;">
                                     <li class="text-white"><i class="fas fa-dumbbell"></i> Gym & yoga</li>
                                     <li class="text-white"><i class="fas fa-ship"></i> Boat tours</li>
@@ -181,14 +189,16 @@
     </section>
 
     <!-- *************************** Footer ****************************-->
-    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <footer class="section footer-classic context-dark bg-image border-top border-white"
+        style="background: transparent;">
         <div class="container py-3">
             <div class="row row-30">
                 <div class="col-md-4 col-xl-5">
                     <div class="pr-xl-4"><strong>
-                            <h4 class="text-white">Nirvana Hotel</h4>
+                            <h4 class="text-white">La Casa Hotel</h4>
                         </strong>
-                        <p class="text-white">We are a 5 stars hotel, All hotels and vacation rental properties
+                        <p class="text-white" style="font-size: small;">We are a 5 stars hotel, All hotels and
+                            vacation rental properties
                             listed
                             on this website are independently owned and operated.</p>
                         <!-- Rights-->
@@ -206,7 +216,7 @@
                     </dl>
                     <dl class="contact-list text-white">
                         <dt>email:</dt>
-                        <dd><a href="mailto:#">nirvanahotel@gmail.com</a></dd>
+                        <dd><a href="mailto:#">lacasahotel@gmail.com</a></dd>
                     </dl>
                     <dl class="contact-list text-white">
                         <dt>phones:</dt>
