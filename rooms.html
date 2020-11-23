@@ -12,7 +12,7 @@
 
 <body>
     <!-- *********************** Navbar ******************************** -->
-    <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="mainnav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><strong>La Casa Hotel</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
@@ -24,7 +24,7 @@
                     <li class="nav-item px-3">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active px-3">
+                    <li class="nav-item active px-3 font-weight-bold">
                         <a class="nav-link" href="rooms.html">Rooms</a>
                     </li>
                     <li class="nav-item px-3">
@@ -39,6 +39,7 @@
         </div>
     </nav>
     <!-- Navbar -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <!-- Full Page Intro -->
     <div class="view"
         style="background-image: url('img/main.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 25rem;">
@@ -293,6 +294,7 @@
         </div>
     </footer>
     <!-- ********************** Bootstrap JS *************************** -->
+    <script src="js/button.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.bundle.js.map"></script>
